@@ -262,3 +262,47 @@
 {"timestamp": "2026-11-27T02:54:31.535212+00:00", "level": "INFO", "logger": "arq.worker", "message": "  2.00s \u2192 cron:process_cancellation_reviews() delayed=1.41s", "service": "cron-worker", "trace_id": "-"}
 08:24:31:   0.00s ← cron:process_cancellation_reviews ● {'enabled': False}
 {"timestamp": "2026-11-27T02:54:31.535384+00:00", "level": "INFO", "logger": "arq.worker", "message": "  0.00s \u2190 cron:process_cancellation_reviews \u25cf {'enabled': False}", "service": "cron-worker", "trace_id": "-"}
+08:24:51:   2.00s → cron:deliver_feedback_webhooks() delayed=1.46s
+{"timestamp": "2026-11-27T02:54:51.582799+00:00", "level": "INFO", "logger": "arq.worker", "message": "  2.00s \u2192 cron:deliver_feedback_webhooks() delayed=1.46s", "service": "cron-worker", "trace_id": "-"}
+08:24:51:   0.00s ← cron:deliver_feedback_webhooks ● {}
+{"timestamp": "2026-11-27T02:54:51.585355+00:00", "level": "INFO", "logger": "arq.worker", "message": "  0.00s \u2190 cron:deliver_feedback_webhooks \u25cf {}", "service": "cron-worker", "trace_id": "-"}
+08:25:00:   1.00s → cron:cleanup_media()
+{"timestamp": "2026-11-27T02:55:00.601897+00:00", "level": "INFO", "logger": "arq.worker", "message": "  1.00s \u2192 cron:cleanup_media()", "service": "cron-worker", "trace_id": "-"}
+08:25:00: recording health: Nov-27 08:25:00 j_complete=55 j_failed=0 j_retried=0 j_ongoing=1 queued=3
+{"timestamp": "2026-11-27T02:55:00.603309+00:00", "level": "INFO", "logger": "arq.worker", "message": "recording health: Nov-27 08:25:00 j_complete=55 j_failed=0 j_retried=0 j_ongoing=1 queued=3", "service": "cron-worker", "trace_id": "-"}
+08:25:00:   0.01s ← cron:cleanup_media ● 
+{"timestamp": "2026-11-27T02:55:00.611763+00:00", "level": "INFO", "logger": "arq.worker", "message": "  0.01s \u2190 cron:cleanup_media \u25cf ", "service": "cron-worker", "trace_id": "-"}
+08:25:01:   2.00s → cron:dispatch_scheduled_social_posts() delayed=1.48s
+{"timestamp": "2026-11-27T02:55:01.604926+00:00", "level": "INFO", "logger": "arq.worker", "message": "  2.00s \u2192 cron:dispatch_scheduled_social_posts() delayed=1.48s", "service": "cron-worker", "trace_id": "-"}
+{"timestamp": "2026-11-27T02:55:01.606446+00:00", "level": "INFO", "logger": "src.runtime_settings", "message": "Loaded 0 encrypted runtime settings", "service": "cron-worker", "trace_id": "-"}
+08:25:01:   0.00s ← cron:dispatch_scheduled_social_posts ● {'dispatched': 0, 'pending_checked': 0, 'stale_failed': 0}
+{"timestamp": "2026-11-27T02:55:01.609061+00:00", "level": "INFO", "logger": "arq.worker", "message": "  0.00s \u2190 cron:dispatch_scheduled_social_posts \u25cf {'dispatched': 0, 'pending_checked': 0, 'stale_failed': 0}", "service": "cron-worker", "trace_id": "-"}
+08:25:30: recording health: Nov-27 08:25:30 j_complete=57 j_failed=0 j_retried=0 j_ongoing=0 queued=4
+{"timestamp": "2026-11-27T02:55:30.670843+00:00", "level": "INFO", "logger": "arq.worker", "message": "recording health: Nov-27 08:25:30 j_complete=57 j_failed=0 j_retried=0 j_ongoing=0 queued=4", "service": "cron-worker", "trace_id": "-"}
+08:25:31:  51.62s → cron:replicate_pending_media() delayed=51.05s
+{"timestamp": "2026-11-27T02:55:31.170410+00:00", "level": "INFO", "logger": "arq.worker", "message": " 51.62s \u2192 cron:replicate_pending_media() delayed=51.05s", "service": "cron-worker", "trace_id": "-"}
+08:25:31:   0.00s ← cron:replicate_pending_media ● 
+{"timestamp": "2026-11-27T02:55:31.170680+00:00", "level": "INFO", "logger": "arq.worker", "message": "  0.00s \u2190 cron:replicate_pending_media \u25cf ", "service": "cron-worker", "trace_id": "-"}
+08:25:31:  22.05s → cron:copy_pending_uploads() delayed=21.55s
+{"timestamp": "2026-11-27T02:55:31.672966+00:00", "level": "INFO", "logger": "arq.worker", "message": " 22.05s \u2192 cron:copy_pending_uploads() delayed=21.55s", "service": "cron-worker", "trace_id": "-"}
+08:25:31:   0.00s ← cron:copy_pending_uploads ● {'copied': 0}
+{"timestamp": "2026-11-27T02:55:31.673449+00:00", "level": "INFO", "logger": "arq.worker", "message": "  0.00s \u2190 cron:copy_pending_uploads \u25cf {'copied': 0}", "service": "cron-worker", "trace_id": "-"}
+08:25:31:  12.53s → cron:check_media_storage() delayed=11.55s
+{"timestamp": "2026-11-27T02:55:31.674229+00:00", "level": "INFO", "logger": "arq.worker", "message": " 12.53s \u2192 cron:check_media_storage() delayed=11.55s", "service": "cron-worker", "trace_id": "-"}
+08:25:31:   0.00s ← cron:check_media_storage ● 
+{"timestamp": "2026-11-27T02:55:31.674622+00:00", "level": "INFO", "logger": "arq.worker", "message": "  0.00s \u2190 cron:check_media_storage \u25cf ", "service": "cron-worker", "trace_id": "-"}
+08:25:31:   2.51s → cron:process_cancellation_reviews() delayed=1.55s
+{"timestamp": "2026-11-27T02:55:31.675469+00:00", "level": "INFO", "logger": "arq.worker", "message": "  2.51s \u2192 cron:process_cancellation_reviews() delayed=1.55s", "service": "cron-worker", "trace_id": "-"}
+08:25:31:   0.00s ← cron:process_cancellation_reviews ● {'enabled': False}
+{"timestamp": "2026-11-27T02:55:31.675814+00:00", "level": "INFO", "logger": "arq.worker", "message": "  0.00s \u2190 cron:process_cancellation_reviews \u25cf {'enabled': False}", "service": "cron-worker", "trace_id": "-"}
+08:25:51:   2.51s → cron:deliver_feedback_webhooks() delayed=1.59s
+{"timestamp": "2026-11-27T02:55:51.716162+00:00", "level": "INFO", "logger": "arq.worker", "message": "  2.51s \u2192 cron:deliver_feedback_webhooks() delayed=1.59s", "service": "cron-worker", "trace_id": "-"}
+08:25:51:   0.00s ← cron:deliver_feedback_webhooks ● {}
+{"timestamp": "2026-11-27T02:55:51.718653+00:00", "level": "INFO", "logger": "arq.worker", "message": "  0.00s \u2190 cron:deliver_feedback_webhooks \u25cf {}", "service": "cron-worker", "trace_id": "-"}
+08:26:00: recording health: Nov-27 08:26:00 j_complete=62 j_failed=0 j_retried=0 j_ongoing=0 queued=2
+{"timestamp": "2026-11-27T02:56:00.737403+00:00", "level": "INFO", "logger": "arq.worker", "message": "recording health: Nov-27 08:26:00 j_complete=62 j_failed=0 j_retried=0 j_ongoing=0 queued=2", "service": "cron-worker", "trace_id": "-"}
+08:26:01:   2.51s → cron:dispatch_scheduled_social_posts() delayed=1.62s
+{"timestamp": "2026-11-27T02:56:01.739414+00:00", "level": "INFO", "logger": "arq.worker", "message": "  2.51s \u2192 cron:dispatch_scheduled_social_posts() delayed=1.62s", "service": "cron-worker", "trace_id": "-"}
+{"timestamp": "2026-11-27T02:56:01.740735+00:00", "level": "INFO", "logger": "src.runtime_settings", "message": "Loaded 0 encrypted runtime settings", "service": "cron-worker", "trace_id": "-"}
+08:26:01:   0.00s ← cron:dispatch_scheduled_social_posts ● {'dispatched': 0, 'pending_checked': 0, 'stale_failed': 0}
+{"timestamp": "2026-11-27T02:56:01.743481+00:00", "level": "INFO", "logger": "arq.worker", "message": "  0.00s \u2190 cron:dispatch_scheduled_social_posts \u25cf {'dispatched': 0, 'pending_checked': 0, 'stale_failed': 0}", "service": "cron-worker", "trace_id": "-"}
